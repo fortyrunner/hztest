@@ -13,7 +13,6 @@ public class MainApp {
 
         ClientConfig clientConfig = new ClientConfig();
         clientConfig.setClusterName("dev");
-//        clientConfig.getNetworkConfig().addAddress("10.90.0.1", "10.90.0.2:5702");
         HazelcastInstance client = HazelcastClient.newHazelcastClient(clientConfig);
 
         IMap<String, Customer> mapCustomers = client.getMap("customers"); //creates the map proxy
