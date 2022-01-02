@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Value
 public class BinaryHolder implements Serializable {
 
-    private final byte[] bytes;
+    byte[] bytes;
 
     public BinaryHolder(int size) {
         bytes = new byte[size];
